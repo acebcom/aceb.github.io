@@ -6,24 +6,30 @@
 
   <!-- Primary SEO -->
   <title>ACEB — Buy Gift Cards with Crypto | Bitcoin, Ethereum & More</title>
-  <meta name="description" content="Buy digital gift cards instantly with Bitcoin, Ethereum, Solana, USDC and 10+ cryptocurrencies. Amazon, Netflix, Steam, Airbnb & hundreds more brands. No account required. Instant delivery." />
-  <meta name="keywords" content="buy gift cards with crypto, bitcoin gift cards, ethereum gift cards, crypto gift cards, digital gift cards cryptocurrency, ACEB, buy amazon gift card crypto, crypto to gift card" />
+  <meta name="description" content="Buy digital gift cards with Bitcoin, Ethereum, Solana, USDC and more. Amazon, Netflix, Steam, Airbnb and thousands of other cards. No account required. Instant delivery." />
+  <meta name="keywords" content="buy gift cards with crypto, bitcoin gift cards, ethereum gift cards, crypto gift cards, digital gift cards cryptocurrency, ACEB, buy amazon gift card crypto, crypto to gift card, gift card MCP server" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://acebcom.github.io/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a0a0a" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://acebcom.github.io/" />
   <meta property="og:title" content="ACEB — Buy Gift Cards with Cryptocurrency" />
-  <meta property="og:description" content="Spend your crypto on hundreds of digital gift cards. Instant delivery, no account required, no hidden fees. Pay with BTC, ETH, SOL, USDC and more." />
+  <meta property="og:description" content="Spend your crypto on thousands of digital gift cards. Instant delivery, no account required, no hidden fees. Pay with BTC, ETH, SOL, USDC and more." />
   <meta property="og:site_name" content="ACEB" />
   <meta property="og:image" content="https://aceb.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ACEB - Digital Gift Cards for Everyone" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ACEBgiftcards" />
   <meta name="twitter:title" content="ACEB — Buy Gift Cards with Cryptocurrency" />
-  <meta name="twitter:description" content="Spend your crypto on hundreds of digital gift cards. Instant delivery, no account required, no hidden fees." />
+  <meta name="twitter:description" content="Spend your crypto on thousands of digital gift cards. Instant delivery, no account required, no hidden fees." />
   <meta name="twitter:image" content="https://aceb.com/og-image.png" />
 
   <!-- Schema.org Structured Data -->
@@ -31,16 +37,17 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "ACEB",
+    "name": "ACEB.com",
     "url": "https://aceb.com",
-    "logo": "https://aceb.com/logo.png",
-    "description": "Global online platform for purchasing digital gift cards instantly using cryptocurrency.",
+    "logo": "https://aceb.com/short-logo-black.svg",
+    "description": "Online shop for digital gift cards paid with cryptocurrency.",
     "legalName": "LOYALTY VAULT SRL",
-    "foundingLocation": "Romania",
+    "address": { "@type": "PostalAddress", "addressCountry": "RO" },
     "email": "support@aceb.com",
     "sameAs": [
-      "https://www.instagram.com/acebcom",
+      "https://www.facebook.com/acebgiftcards",
       "https://x.com/ACEBgiftcards",
+      "https://www.instagram.com/acebcom",
       "https://www.youtube.com/@acebcom",
       "https://www.tiktok.com/@acebgiftcards",
       "https://t.me/acebgiftcards",
@@ -51,326 +58,61 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "ACEB",
-    "url": "https://aceb.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://aceb.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which cryptocurrencies can I pay with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ACEB accepts Bitcoin, Ethereum, Solana, Litecoin, USDC, EURC, BNB, XRP, Polygon, Dogecoin and Tron. Binance Pay and WalletConnect are supported too, and registered customers can pay by SEPA bank transfer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A crypto checkout needs only the email address the gift card is sent to. An account is optional: it is needed for SEPA bank transfer and to earn cashback."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast is delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gift cards are sent by email as soon as the payment is confirmed. Most crypto payments confirm within a few minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can a gift card be used?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each gift card is region-specific. Before buying, check that the card matches the country where it will be redeemed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can an AI assistant shop for me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ACEB runs a free public MCP server at https://api.aceb.com/mcp. ChatGPT, Claude and other assistants can search the catalog and prepare a cart. You always complete the payment yourself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get a refund?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gift card codes are digital and delivered instantly, so a delivered gift card cannot be returned or refunded. If a code does not work, contact support@aceb.com."
+        }
+      }
+    ]
   }
   </script>
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --black: #0a0a0a;
-      --dark: #111827;
-      --card: #1a2235;
-      --border: #2a3a55;
-      --accent: #f59e0b;
-      --accent2: #3b82f6;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --white: #ffffff;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: var(--dark);
-      color: var(--text);
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* ── HEADER ── */
-    header {
-      background: var(--black);
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-    }
-    .header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-    }
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--white);
-      letter-spacing: -0.5px;
-    }
-    .logo span { color: var(--accent); }
-    nav a {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-left: 28px;
-      font-weight: 500;
-    }
-    nav a:hover { color: var(--white); text-decoration: none; }
-    .cta-btn {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--black) !important;
-      font-weight: 700;
-      font-size: 0.9rem;
-      padding: 9px 20px;
-      border-radius: 8px;
-      margin-left: 32px;
-      transition: opacity .15s;
-    }
-    .cta-btn:hover { opacity: .85; text-decoration: none; }
-
-    /* ── HERO ── */
-    .hero {
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, #1e3a5f 0%, var(--dark) 70%);
-      padding: 100px 24px 80px;
-      text-align: center;
-    }
-    .hero-badge {
-      display: inline-block;
-      background: rgba(245,158,11,.12);
-      color: var(--accent);
-      border: 1px solid rgba(245,158,11,.3);
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 4px 14px;
-      border-radius: 999px;
-      margin-bottom: 24px;
-      letter-spacing: .5px;
-      text-transform: uppercase;
-    }
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 800;
-      color: var(--white);
-      line-height: 1.15;
-      max-width: 780px;
-      margin: 0 auto 20px;
-      letter-spacing: -1px;
-    }
-    h1 em { color: var(--accent); font-style: normal; }
-    .hero-sub {
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 600px;
-      margin: 0 auto 36px;
-    }
-    .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-    .btn-primary {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--black);
-      font-weight: 700;
-      font-size: 1rem;
-      padding: 14px 32px;
-      border-radius: 10px;
-      transition: opacity .15s, transform .15s;
-    }
-    .btn-primary:hover { opacity: .88; transform: translateY(-1px); text-decoration: none; }
-    .btn-secondary {
-      display: inline-block;
-      background: transparent;
-      color: var(--text);
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 13px 30px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      transition: border-color .15s;
-    }
-    .btn-secondary:hover { border-color: var(--muted); text-decoration: none; }
-
-    /* ── CRYPTO TICKER ── */
-    .crypto-bar {
-      background: var(--black);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      overflow: hidden;
-      padding: 12px 0;
-    }
-    .crypto-bar-inner {
-      display: flex;
-      gap: 32px;
-      animation: ticker 30s linear infinite;
-      width: max-content;
-    }
-    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    .crypto-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--muted);
-      white-space: nowrap;
-    }
-    .crypto-item .ticker { color: var(--white); }
-
-    /* ── SECTIONS ── */
-    section { padding: 72px 24px; }
-    .section-inner { max-width: 1100px; margin: 0 auto; }
-    h2 {
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 800;
-      color: var(--white);
-      letter-spacing: -.5px;
-      margin-bottom: 12px;
-    }
-    .section-lead {
-      color: var(--muted);
-      font-size: 1rem;
-      margin-bottom: 48px;
-      max-width: 560px;
-    }
-
-    /* ── FEATURES ── */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .feature-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 28px;
-      transition: border-color .2s;
-    }
-    .feature-card:hover { border-color: var(--accent2); }
-    .feature-icon { font-size: 1.8rem; margin-bottom: 14px; }
-    .feature-card h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-    .feature-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
-
-    /* ── HOW IT WORKS ── */
-    .how-section { background: var(--black); }
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; counter-reset: steps; }
-    .step { text-align: center; counter-increment: steps; }
-    .step-num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 52px; height: 52px;
-      border-radius: 50%;
-      background: rgba(245,158,11,.12);
-      border: 2px solid var(--accent);
-      color: var(--accent);
-      font-size: 1.2rem;
-      font-weight: 800;
-      margin-bottom: 16px;
-    }
-    .step h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-    .step p { font-size: 0.9rem; color: var(--muted); }
-
-    /* ── CATEGORIES ── */
-    .cats { display: flex; flex-wrap: wrap; gap: 12px; }
-    .cat-tag {
-      background: var(--card);
-      border: 1px solid var(--border);
-      color: var(--text);
-      font-size: 0.9rem;
-      font-weight: 500;
-      padding: 8px 18px;
-      border-radius: 999px;
-      transition: border-color .15s, color .15s;
-    }
-    .cat-tag:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-
-    /* ── CRYPTO TABLE ── */
-    .crypto-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-    }
-    .crypto-table th {
-      text-align: left;
-      color: var(--muted);
-      font-weight: 600;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    .crypto-table td {
-      padding: 14px 16px;
-      border-bottom: 1px solid rgba(42,58,85,.5);
-      color: var(--text);
-      font-weight: 500;
-    }
-    .crypto-table tr:last-child td { border-bottom: none; }
-    .crypto-table tr:hover td { background: rgba(255,255,255,.02); }
-    .ticker-pill {
-      display: inline-block;
-      background: rgba(59,130,246,.1);
-      border: 1px solid rgba(59,130,246,.25);
-      color: var(--accent2);
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 2px 10px;
-      border-radius: 999px;
-    }
-
-    /* ── CTA BANNER ── */
-    .cta-banner {
-      background: linear-gradient(135deg, #1e3a5f 0%, #1a2235 100%);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 56px 40px;
-      text-align: center;
-    }
-    .cta-banner h2 { margin-bottom: 12px; }
-    .cta-banner p { color: var(--muted); margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
-
-    /* ── SOCIAL ── */
-    .social-grid { display: flex; flex-wrap: wrap; gap: 14px; }
-    .social-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      color: var(--text);
-      font-size: 0.9rem;
-      font-weight: 500;
-      padding: 10px 20px;
-      border-radius: 10px;
-      transition: border-color .15s, color .15s;
-    }
-    .social-link:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--black);
-      border-top: 1px solid var(--border);
-      padding: 40px 24px;
-      text-align: center;
-    }
-    .footer-inner { max-width: 1100px; margin: 0 auto; }
-    .footer-logo { font-size: 1.3rem; font-weight: 800; color: var(--white); margin-bottom: 12px; }
-    .footer-logo span { color: var(--accent); }
-    footer p { color: var(--muted); font-size: 0.85rem; margin-bottom: 6px; }
-    footer a { color: var(--muted); }
-    footer a:hover { color: var(--accent); }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 600px) {
-      nav { display: none; }
-      .cta-btn { display: none; }
-      .hero { padding: 60px 20px 50px; }
-      section { padding: 48px 20px; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -378,27 +120,33 @@
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <div class="logo">ACEB<span>.</span>com</div>
+      <a class="logo" href="https://aceb.com" rel="noopener" target="_blank" aria-label="ACEB.com">
+        <svg viewBox="0 0 248.16 219.8" aria-hidden="true"><path d="m247.98,100.15c-.08-55.31-41.87-100.15-93.41-100.15h-61.05C41.91,0,.08,44.91.08,100.28h78.62C34.83,102.89,0,141.9,0,189.66v30.14h248.16v-119.67h-.18v.02Z"/></svg>
+        <div>ACEB<span>.</span>com</div>
+      </a>
       <nav>
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
-        <a href="#crypto">Crypto</a>
+        <a href="#crypto">Payments</a>
         <a href="#categories">Brands</a>
+        <a href="#ai">AI Shopping</a>
         <a class="cta-btn" href="https://aceb.com" rel="noopener" target="_blank">Shop Now →</a>
       </nav>
     </div>
   </header>
 
+  <main>
+
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge">Instant · No Account · No Fees</div>
+    <div class="hero-badge">Instant Delivery · No Account · No Hidden Fees</div>
     <h1>Buy Digital Gift Cards with <em>Cryptocurrency</em></h1>
     <p class="hero-sub">
-      Spend Bitcoin, Ethereum, Solana, USDC and 10+ other cryptocurrencies on hundreds of top brands —
-      delivered to your inbox in seconds.
+      Spend Bitcoin, Ethereum, Solana, USDC and other cryptocurrencies on thousands of gift cards from top brands —
+      delivered to your inbox right after payment.
     </p>
     <div class="hero-actions">
-      <a class="btn-primary" href="https://aceb.com" rel="noopener" target="_blank">Browse Gift Cards</a>
+      <a class="btn-primary" href="https://aceb.com/giftcards" rel="noopener" target="_blank">Browse Gift Cards</a>
       <a class="btn-secondary" href="https://aceb.com/blog" rel="noopener" target="_blank">Read Our Blog</a>
     </div>
   </section>
@@ -409,26 +157,26 @@
       <div class="crypto-item">Bitcoin <span class="ticker">BTC</span></div>
       <div class="crypto-item">Ethereum <span class="ticker">ETH</span></div>
       <div class="crypto-item">Solana <span class="ticker">SOL</span></div>
-      <div class="crypto-item">USDC <span class="ticker">USDC</span></div>
+      <div class="crypto-item">USD Coin <span class="ticker">USDC</span></div>
+      <div class="crypto-item">Euro Coin <span class="ticker">EURC</span></div>
       <div class="crypto-item">BNB <span class="ticker">BNB</span></div>
       <div class="crypto-item">XRP <span class="ticker">XRP</span></div>
       <div class="crypto-item">Litecoin <span class="ticker">LTC</span></div>
       <div class="crypto-item">Dogecoin <span class="ticker">DOGE</span></div>
-      <div class="crypto-item">Polygon <span class="ticker">MATIC</span></div>
+      <div class="crypto-item">Polygon <span class="ticker">POL</span></div>
       <div class="crypto-item">Tron <span class="ticker">TRX</span></div>
-      <div class="crypto-item">Bitcoin Cash <span class="ticker">BCH</span></div>
       <!-- duplicate for seamless loop -->
       <div class="crypto-item">Bitcoin <span class="ticker">BTC</span></div>
       <div class="crypto-item">Ethereum <span class="ticker">ETH</span></div>
       <div class="crypto-item">Solana <span class="ticker">SOL</span></div>
-      <div class="crypto-item">USDC <span class="ticker">USDC</span></div>
+      <div class="crypto-item">USD Coin <span class="ticker">USDC</span></div>
+      <div class="crypto-item">Euro Coin <span class="ticker">EURC</span></div>
       <div class="crypto-item">BNB <span class="ticker">BNB</span></div>
       <div class="crypto-item">XRP <span class="ticker">XRP</span></div>
       <div class="crypto-item">Litecoin <span class="ticker">LTC</span></div>
       <div class="crypto-item">Dogecoin <span class="ticker">DOGE</span></div>
-      <div class="crypto-item">Polygon <span class="ticker">MATIC</span></div>
+      <div class="crypto-item">Polygon <span class="ticker">POL</span></div>
       <div class="crypto-item">Tron <span class="ticker">TRX</span></div>
-      <div class="crypto-item">Bitcoin Cash <span class="ticker">BCH</span></div>
     </div>
   </div>
 
@@ -441,57 +189,72 @@
         <div class="feature-card">
           <div class="feature-icon">⚡</div>
           <h3>Instant Delivery</h3>
-          <p>Your gift card code arrives by email within seconds of blockchain payment confirmation. No waiting, no delays.</p>
+          <p>Your gift card code is sent by email as soon as the payment is confirmed, with redemption instructions included.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h3>No Account Required</h3>
-          <p>Browse, pay, and receive your code without creating an account. Maximum privacy, minimum friction.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🌍</div>
-          <h3>Global Reach</h3>
-          <p>Gift cards across 50+ countries — serving users in Europe, Asia, North America, and beyond.</p>
+          <div class="feature-icon">🎁</div>
+          <h3>Thousands of Gift Cards</h3>
+          <p>Cards for 100+ countries in 40+ currencies, across 14 categories — from gaming and streaming to travel and groceries.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">💳</div>
           <h3>Wide Crypto Support</h3>
-          <p>BTC, ETH, SOL, LTC, USDC, BNB, XRP, MATIC, DOGE, BCH, TRX + Binance Pay, WalletConnect and SEPA.</p>
+          <p>BTC, ETH, SOL, LTC, USDC, EURC, BNB, XRP, POL, DOGE and TRX, plus Binance Pay, WalletConnect and SEPA bank transfer.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>No Account Required</h3>
+          <p>Browse, pay with crypto, and receive your code. Checkout needs only the email address your card is sent to.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Shopping</h3>
+          <p>Ask ChatGPT, Claude or another assistant to find a card and build your cart through the free <a href="mcp/">ACEB MCP server</a>.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💸</div>
+          <h3>Cashback &amp; Referrals</h3>
+          <p>With a free account, qualifying orders earn store credit — and so does inviting friends. See the <a href="https://aceb.com/cashback-terms" rel="noopener" target="_blank">cashback</a> and <a href="https://aceb.com/referral-terms" rel="noopener" target="_blank">referral</a> terms.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💌</div>
+          <h3>Send as a Gift</h3>
+          <p>Add the recipient's email and a personal message at checkout, and the gift card goes straight to their inbox.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🏷️</div>
           <h3>No Hidden Fees</h3>
-          <p>Transparent pricing every time. Clear terms and redemption instructions included with every product.</p>
+          <p>Transparent pricing every time. Clear terms and redemption instructions on every product.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">💬</div>
-          <h3>24/7 Support</h3>
-          <p>Real human assistance available around the clock. We're here whenever you need help.</p>
+          <h3>Human Support</h3>
+          <p>Real people answer at <a href="mailto:support@aceb.com">support@aceb.com</a>, typically within 24 hours.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how-section" id="how-it-works">
+  <section class="section-alt" id="how-it-works">
     <div class="section-inner">
       <h2>How It Works</h2>
-      <p class="section-lead">Three steps from crypto to gift card — no complexity, no delays.</p>
+      <p class="section-lead">Three steps from crypto to gift card.</p>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <h3>Browse</h3>
-          <p>Explore hundreds of digital gift cards on <a href="https://aceb.com" rel="noopener" target="_blank">aceb.com</a> — filter by brand, category, country, or value.</p>
+          <p>Explore the <a href="https://aceb.com/giftcards" rel="noopener" target="_blank">gift card catalog</a> on aceb.com — filter by brand, category or country.</p>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <h3>Pay with Crypto</h3>
-          <p>Choose your preferred cryptocurrency. Payment is processed securely and confirmed on the blockchain.</p>
+          <p>Choose your preferred cryptocurrency and pay on the secure hosted payment page.</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
-          <h3>Receive Instantly</h3>
-          <p>Your digital gift card code is delivered to your email in seconds, with full redemption instructions included.</p>
+          <h3>Receive by Email</h3>
+          <p>Your digital gift card code is delivered to your email, with full redemption instructions.</p>
         </div>
       </div>
     </div>
@@ -501,62 +264,141 @@
   <section id="crypto">
     <div class="section-inner">
       <h2>Supported Cryptocurrencies</h2>
-      <p class="section-lead">Pay with the coins you already hold — no conversion or exchange needed.</p>
-      <table class="crypto-table" role="table">
-        <thead>
-          <tr>
-            <th>Cryptocurrency</th>
-            <th>Ticker</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Bitcoin</td><td><span class="ticker-pill">BTC</span></td></tr>
-          <tr><td>Ethereum</td><td><span class="ticker-pill">ETH</span></td></tr>
-          <tr><td>Solana</td><td><span class="ticker-pill">SOL</span></td></tr>
-          <tr><td>Litecoin</td><td><span class="ticker-pill">LTC</span></td></tr>
-          <tr><td>USD Coin</td><td><span class="ticker-pill">USDC</span></td></tr>
-          <tr><td>BNB</td><td><span class="ticker-pill">BNB</span></td></tr>
-          <tr><td>XRP</td><td><span class="ticker-pill">XRP</span></td></tr>
-          <tr><td>Polygon</td><td><span class="ticker-pill">MATIC</span></td></tr>
-          <tr><td>Dogecoin</td><td><span class="ticker-pill">DOGE</span></td></tr>
-          <tr><td>Bitcoin Cash</td><td><span class="ticker-pill">BCH</span></td></tr>
-          <tr><td>Tron</td><td><span class="ticker-pill">TRX</span></td></tr>
-        </tbody>
-      </table>
-      <p style="margin-top:20px; color: var(--muted); font-size: 0.9rem;">
-        Additional methods: <strong style="color:var(--text)">Binance Pay</strong>, <strong style="color:var(--text)">WalletConnect</strong>, <strong style="color:var(--text)">SEPA bank transfer</strong>, and more.
+      <p class="section-lead">Pay with the coins you already hold — no exchange in between.</p>
+      <div class="table-wrap">
+        <table class="crypto-table">
+          <thead>
+            <tr>
+              <th>Cryptocurrency</th>
+              <th>Ticker</th>
+              <th>Guide</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bitcoin</td><td><span class="ticker-pill">BTC</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-bitcoin-btc" rel="noopener" target="_blank">Buy gift cards with Bitcoin</a></td></tr>
+            <tr><td>Ethereum</td><td><span class="ticker-pill">ETH</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-ethereum" rel="noopener" target="_blank">Buy gift cards with Ethereum</a></td></tr>
+            <tr><td>Solana</td><td><span class="ticker-pill">SOL</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-solana" rel="noopener" target="_blank">Buy gift cards with Solana</a></td></tr>
+            <tr><td>Litecoin</td><td><span class="ticker-pill">LTC</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-litecoin" rel="noopener" target="_blank">Buy gift cards with Litecoin</a></td></tr>
+            <tr><td>USD Coin</td><td><span class="ticker-pill">USDC</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-usdc" rel="noopener" target="_blank">Buy gift cards with USDC</a></td></tr>
+            <tr><td>Euro Coin</td><td><span class="ticker-pill">EURC</span></td><td>—</td></tr>
+            <tr><td>BNB</td><td><span class="ticker-pill">BNB</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-bnb" rel="noopener" target="_blank">Buy gift cards with BNB</a></td></tr>
+            <tr><td>XRP</td><td><span class="ticker-pill">XRP</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-xrp" rel="noopener" target="_blank">Buy gift cards with XRP</a></td></tr>
+            <tr><td>Polygon</td><td><span class="ticker-pill">POL</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-polygon" rel="noopener" target="_blank">Buy gift cards with Polygon</a></td></tr>
+            <tr><td>Dogecoin</td><td><span class="ticker-pill">DOGE</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-dogecoin" rel="noopener" target="_blank">Buy gift cards with Dogecoin</a></td></tr>
+            <tr><td>Tron</td><td><span class="ticker-pill">TRX</span></td><td><a href="https://aceb.com/pages/buy-gift-cards-with-tron" rel="noopener" target="_blank">Buy gift cards with Tron</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        Also accepted:
+        <strong><a href="https://aceb.com/pages/buy-gift-cards-with-binance-pay" rel="noopener" target="_blank">Binance Pay</a></strong>,
+        <strong><a href="https://aceb.com/pages/buy-gift-cards-with-walletconnect" rel="noopener" target="_blank">WalletConnect</a></strong> and
+        <strong><a href="https://aceb.com/pages/buy-gift-cards-with-sepa" rel="noopener" target="_blank">SEPA bank transfer</a></strong> (EUR, with a customer account).
       </p>
     </div>
   </section>
 
   <!-- CATEGORIES -->
-  <section style="background: var(--black);" id="categories">
+  <section class="section-alt" id="categories">
     <div class="section-inner">
       <h2>Gift Card Categories</h2>
-      <p class="section-lead">From streaming to gaming, food delivery to travel — hundreds of top brands available now.</p>
-      <div class="cats" style="margin-bottom: 36px;">
-        <a class="cat-tag" href="https://aceb.com" rel="noopener" target="_blank">🎬 Entertainment</a>
-        <a class="cat-tag" href="https://aceb.com" rel="noopener" target="_blank">🎮 Gaming</a>
-        <a class="cat-tag" href="https://aceb.com" rel="noopener" target="_blank">🛍️ Retail & eCommerce</a>
-        <a class="cat-tag" href="https://aceb.com" rel="noopener" target="_blank">🍔 Food & Delivery</a>
-        <a class="cat-tag" href="https://aceb.com" rel="noopener" target="_blank">✈️ Travel & Experiences</a>
-        <a class="cat-tag" href="https://aceb.com" rel="noopener" target="_blank">💳 Lifestyle & Prepaid</a>
-        <a class="cat-tag" href="https://aceb.com" rel="noopener" target="_blank">☁️ Software & Tech</a>
+      <p class="section-lead">From streaming to gaming, food delivery to travel — thousands of gift cards available now.</p>
+      <div class="cats">
+        <a class="cat-tag" href="https://aceb.com/giftcards/gaming" rel="noopener" target="_blank">🎮 Gaming</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/streaming-and-subscriptions" rel="noopener" target="_blank">🎬 Streaming &amp; Subscriptions</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/retail-and-shopping" rel="noopener" target="_blank">🛍️ Retail &amp; Shopping</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/fashion-and-apparel" rel="noopener" target="_blank">👟 Fashion &amp; Apparel</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/food-and-restaurants" rel="noopener" target="_blank">🍔 Food &amp; Restaurants</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/groceries-and-supermarkets" rel="noopener" target="_blank">🛒 Groceries &amp; Supermarkets</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/travel-hotels-and-mobility" rel="noopener" target="_blank">✈️ Travel, Hotels &amp; Mobility</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/beauty-and-personal-care" rel="noopener" target="_blank">💄 Beauty &amp; Personal Care</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/electronics-and-tech" rel="noopener" target="_blank">💻 Electronics &amp; Tech</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/entertainment-gifts-and-events" rel="noopener" target="_blank">🎟️ Entertainment, Gifts &amp; Events</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/home-and-lifestyle" rel="noopener" target="_blank">🏠 Home &amp; Lifestyle</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/sports-health-and-fitness" rel="noopener" target="_blank">🏃 Sports, Health &amp; Fitness</a>
+        <a class="cat-tag" href="https://aceb.com/giftcards/books-education-and-elearning" rel="noopener" target="_blank">📚 Books, Education &amp; eLearning</a>
       </div>
-      <p style="color: var(--muted); font-size: 0.95rem;">
+      <p class="brands">
         Popular brands include
-        <a href="https://aceb.com" rel="noopener" target="_blank">Amazon</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Netflix</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Steam</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Airbnb</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Uber Eats</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Google Play</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Apple</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Spotify</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">PlayStation</a>,
-        <a href="https://aceb.com" rel="noopener" target="_blank">Xbox</a>
-        — and hundreds more across 50+ countries.
+        <a href="https://aceb.com/brands/amazon-gift-cards" rel="noopener" target="_blank">Amazon</a>,
+        <a href="https://aceb.com/brands/netflix-gift-cards" rel="noopener" target="_blank">Netflix</a>,
+        <a href="https://aceb.com/brands/steam-gift-card" rel="noopener" target="_blank">Steam</a>,
+        <a href="https://aceb.com/brands/playstation-gift-cards" rel="noopener" target="_blank">PlayStation</a>,
+        <a href="https://aceb.com/brands/xbox-gift-cards" rel="noopener" target="_blank">Xbox</a>,
+        <a href="https://aceb.com/brands/nintendo-gift-cards" rel="noopener" target="_blank">Nintendo</a>,
+        <a href="https://aceb.com/brands/google-play-gift-cards" rel="noopener" target="_blank">Google Play</a>,
+        <a href="https://aceb.com/brands/apple-brand" rel="noopener" target="_blank">Apple</a>,
+        <a href="https://aceb.com/brands/roblox-gift-cards" rel="noopener" target="_blank">Roblox</a>,
+        <a href="https://aceb.com/brands/airbnb-gift-cards" rel="noopener" target="_blank">Airbnb</a>,
+        <a href="https://aceb.com/brands/uber-gift-cards" rel="noopener" target="_blank">Uber</a> and
+        <a href="https://aceb.com/brands/zalando-gift-cards" rel="noopener" target="_blank">Zalando</a>
+        — see <a href="https://aceb.com/brands" rel="noopener" target="_blank">all brands</a>.
       </p>
+    </div>
+  </section>
+
+  <!-- AI SHOPPING -->
+  <section id="ai">
+    <div class="section-inner">
+      <h2>Shop with an AI Assistant</h2>
+      <p class="section-lead">ACEB runs a free public MCP server, so ChatGPT, Claude, Cursor and other assistants can shop the catalog for you. No account, no API key.</p>
+      <code class="code-box">https://api.aceb.com/mcp</code>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Ask</h3>
+          <p>"Find a 50 EUR Steam gift card for Germany." The assistant searches the live catalog and quotes the price.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Get a Link</h3>
+          <p>It builds your cart and hands you a link to it — or straight to the hosted crypto payment page.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>You Pay</h3>
+          <p>You always complete the payment yourself. The gift card code arrives by email, never in the chat.</p>
+        </div>
+      </div>
+      <div class="link-row">
+        <a class="btn-secondary" href="mcp/">MCP Setup Guide</a>
+        <a class="btn-secondary" href="https://aceb.com/llms.txt" rel="noopener" target="_blank">llms.txt</a>
+        <a class="btn-secondary" href="https://api.aceb.com/agent/openapi.json" rel="noopener" target="_blank">OpenAPI Spec</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-alt" id="faq">
+    <div class="section-inner">
+      <h2>Frequently Asked Questions</h2>
+      <p class="section-lead">More answers in the <a href="https://aceb.com/faq" rel="noopener" target="_blank">ACEB FAQ</a>.</p>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>Which cryptocurrencies can I pay with?</h3>
+          <p>Bitcoin, Ethereum, Solana, Litecoin, USDC, EURC, BNB, XRP, Polygon, Dogecoin and Tron. Binance Pay and WalletConnect are supported too, and registered customers can pay by SEPA bank transfer.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need an account?</h3>
+          <p>No. A crypto checkout needs only the email address the gift card is sent to. An account is optional: it is needed for SEPA bank transfer and to earn cashback.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How fast is delivery?</h3>
+          <p>Gift cards are sent by email as soon as the payment is confirmed. Most crypto payments confirm within a few minutes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Where can a gift card be used?</h3>
+          <p>Each gift card is region-specific. Before buying, check that the card matches the country where it will be redeemed.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can an AI assistant shop for me?</h3>
+          <p>Yes. ChatGPT, Claude and other assistants can search the catalog and prepare a cart through the <a href="mcp/">ACEB MCP server</a>. You always complete the payment yourself.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I get a refund?</h3>
+          <p>Gift card codes are digital and delivered instantly, so a delivered gift card cannot be returned or refunded. If a code does not work, contact <a href="mailto:support@aceb.com">support@aceb.com</a>. See the <a href="https://aceb.com/return" rel="noopener" target="_blank">return policy</a>.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -572,12 +414,14 @@
   </section>
 
   <!-- SOCIAL / CONNECT -->
-  <section style="background: var(--black); padding: 48px 24px;">
+  <section class="section-alt social-section">
     <div class="section-inner">
-      <h2 style="margin-bottom: 24px;">Connect with ACEB</h2>
+      <h2>Connect with ACEB</h2>
       <div class="social-grid">
+        <a class="social-link" href="https://www.trustpilot.com/review/aceb.com" rel="noopener" target="_blank">⭐ Trustpilot</a>
         <a class="social-link" href="https://www.instagram.com/acebcom" rel="noopener" target="_blank">📸 Instagram</a>
         <a class="social-link" href="https://x.com/ACEBgiftcards" rel="noopener" target="_blank">𝕏 Twitter / X</a>
+        <a class="social-link" href="https://www.facebook.com/acebgiftcards" rel="noopener" target="_blank">👍 Facebook</a>
         <a class="social-link" href="https://www.youtube.com/@acebcom" rel="noopener" target="_blank">▶ YouTube</a>
         <a class="social-link" href="https://www.tiktok.com/@acebgiftcards" rel="noopener" target="_blank">🎵 TikTok</a>
         <a class="social-link" href="https://t.me/acebgiftcards" rel="noopener" target="_blank">✈️ Telegram</a>
@@ -588,17 +432,30 @@
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">ACEB<span>.</span>com</div>
-      <p>Global platform for buying digital gift cards with cryptocurrency.</p>
-      <p style="margin-top:8px;">
+      <p>Online shop for digital gift cards paid with cryptocurrency.</p>
+      <p class="footer-links">
         <a href="https://aceb.com" rel="noopener" target="_blank">aceb.com</a> &nbsp;·&nbsp;
-        <a href="mailto:support@aceb.com">support@aceb.com</a> &nbsp;·&nbsp;
-        <a href="https://aceb.com/contact" rel="noopener" target="_blank">Contact</a>
+        <a href="https://aceb.com/about" rel="noopener" target="_blank">About</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/faq" rel="noopener" target="_blank">FAQ</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/contact" rel="noopener" target="_blank">Contact</a> &nbsp;·&nbsp;
+        <a href="mailto:support@aceb.com">support@aceb.com</a>
       </p>
-      <p style="margin-top:16px; font-size: 0.8rem;">© LOYALTY VAULT SRL — All rights reserved.</p>
+      <p class="footer-links">
+        <a href="https://aceb.com" hreflang="en" rel="noopener" target="_blank">English</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/de" hreflang="de" rel="noopener" target="_blank">Deutsch</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/es" hreflang="es" rel="noopener" target="_blank">Español</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/fr" hreflang="fr" rel="noopener" target="_blank">Français</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/it" hreflang="it" rel="noopener" target="_blank">Italiano</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/ru" hreflang="ru" rel="noopener" target="_blank">Русский</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/zh" hreflang="zh" rel="noopener" target="_blank">中文</a>
+      </p>
+      <p class="footer-legal">© LOYALTY VAULT SRL — All rights reserved.</p>
     </div>
   </footer>
 

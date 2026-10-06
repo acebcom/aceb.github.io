@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gift Card MCP Server for ChatGPT, Claude &amp; Cursor | ACEB</title>
+  <meta name="description" content="Free public MCP server for AI assistants: search thousands of digital gift cards, quote prices and build a crypto checkout link. No account, no API key." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://acebcom.github.io/mcp/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://acebcom.github.io/mcp/" />
+  <meta property="og:title" content="ACEB MCP Server — Gift Card Shopping for AI Assistants" />
+  <meta property="og:description" content="Connect ChatGPT, Claude or Cursor to the ACEB gift card catalog. Free, no account, no API key. The human always pays." />
+  <meta property="og:site_name" content="ACEB" />
+  <meta property="og:image" content="https://aceb.com/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ACEBgiftcards" />
+  <meta name="twitter:title" content="ACEB MCP Server — Gift Card Shopping for AI Assistants" />
+  <meta name="twitter:description" content="Connect ChatGPT, Claude or Cursor to the ACEB gift card catalog. Free, no account, no API key." />
+  <meta name="twitter:image" content="https://aceb.com/og-image.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="../" aria-label="ACEB.com">
+        <svg viewBox="0 0 248.16 219.8" aria-hidden="true"><path d="m247.98,100.15c-.08-55.31-41.87-100.15-93.41-100.15h-61.05C41.91,0,.08,44.91.08,100.28h78.62C34.83,102.89,0,141.9,0,189.66v30.14h248.16v-119.67h-.18v.02Z"/></svg>
+        <div>ACEB<span>.</span>com</div>
+      </a>
+      <nav>
+        <a href="#connect">Connect</a>
+        <a href="#tools">Tools</a>
+        <a href="#safety">Safety</a>
+        <a href="../">Overview</a>
+        <a class="cta-btn" href="https://aceb.com" rel="noopener" target="_blank">Shop Now →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">Free · No Account · No API Key</div>
+    <h1>Gift Card Shopping for <em>AI Assistants</em></h1>
+    <p class="hero-sub">
+      The ACEB MCP server lets ChatGPT, Claude, Cursor and other assistants search thousands of digital gift cards
+      and prepare a crypto checkout for you.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#connect">Connect Your Assistant</a>
+      <a class="btn-secondary" href="https://github.com/acebcom/aceb.com/blob/main/docs/mcp.md" rel="noopener" target="_blank">Full Guide on GitHub</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner doc">
+
+      <h2 id="what">What it is</h2>
+      <p>
+        <a href="https://aceb.com" rel="noopener" target="_blank">ACEB.com</a> is an online shop for
+        <a href="https://aceb.com/giftcards" rel="noopener" target="_blank">digital gift cards</a> paid with cryptocurrency.
+        Its public <a href="https://modelcontextprotocol.io" rel="noopener" target="_blank">Model Context Protocol</a> server
+        gives an AI assistant the tools to search the catalog, read product details, quote prices, build a cart and open a checkout.
+      </p>
+      <code class="code-box">https://api.aceb.com/mcp</code>
+      <ul>
+        <li><strong>Transport:</strong> Streamable HTTP</li>
+        <li><strong>Authentication:</strong> none</li>
+        <li><strong>Price:</strong> free</li>
+      </ul>
+
+      <h2 id="connect">Connect</h2>
+
+      <h3>Claude</h3>
+      <p>Settings → Connectors → <strong>Add custom connector</strong>, then enter the endpoint URL.</p>
+
+      <h3>Claude Code</h3>
+      <code class="code-box">claude mcp add --transport http aceb https://api.aceb.com/mcp</code>
+
+      <h3>ChatGPT</h3>
+      <p>Turn on developer mode in the connector settings, then create a connector with the endpoint URL and no authentication.</p>
+
+      <h3>Cursor</h3>
+      <p>Add the server to <code>~/.cursor/mcp.json</code>:</p>
+      <code class="code-box">{
+  "mcpServers": {
+    "aceb": { "url": "https://api.aceb.com/mcp" }
+  }
+}</code>
+
+      <h3>VS Code</h3>
+      <p>Add the server to <code>.vscode/mcp.json</code>:</p>
+      <code class="code-box">{
+  "servers": {
+    "aceb": { "type": "http", "url": "https://api.aceb.com/mcp" }
+  }
+}</code>
+
+      <p>Then ask in plain words: <em>"Find a 50 EUR Steam gift card for Germany and add it to a cart."</em></p>
+
+      <h2 id="tools">Tools</h2>
+      <div class="table-wrap">
+        <table class="crypto-table">
+          <thead>
+            <tr><th>Tool</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>search_products</code></td><td>Search in-stock gift cards by text, category and country.</td></tr>
+            <tr><td><code>get_product</code></td><td>Description, terms, how to redeem, FAQ and face values of one gift card.</td></tr>
+            <tr><td><code>quote_price</code></td><td>What the shopper pays for a card of a given face value.</td></tr>
+            <tr><td><code>get_cart</code></td><td>Read a cart.</td></tr>
+            <tr><td><code>create_cart</code></td><td>Add items to a cart and get a shareable cart link.</td></tr>
+            <tr><td><code>update_cart_item</code></td><td>Change the quantity or face value of a cart line.</td></tr>
+            <tr><td><code>remove_cart_item</code></td><td>Remove a cart line.</td></tr>
+            <tr><td><code>list_payment_methods</code></td><td>Payment methods with the coins, networks and wallet apps each accepts.</td></tr>
+            <tr><td><code>create_crypto_checkout</code></td><td>Open a hosted crypto payment session and return its link.</td></tr>
+            <tr><td><code>get_order_status</code></td><td>Status of an order created through these tools.</td></tr>
+            <tr><td><code>get_site_content</code></td><td>FAQ, terms, privacy, returns and other information pages, in 12 languages.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="safety">Safety</h2>
+      <ul>
+        <li><strong>The human always pays.</strong> No tool moves money. A checkout returns a link to a hosted payment page.</li>
+        <li><strong>Codes stay out of the chat.</strong> Gift card codes are delivered to the order email and are never returned by a tool.</li>
+        <li><strong>Explicit intent.</strong> Carts and checkouts are created only when the user asks for them.</li>
+        <li><strong>Any payment method.</strong> The cart link opens on aceb.com, where every payment method is available.</li>
+      </ul>
+
+      <h2 id="more">More</h2>
+      <ul>
+        <li><a href="https://github.com/acebcom/aceb.com/blob/main/docs/mcp.md" rel="noopener" target="_blank">MCP server guide</a> — every client, the tool rules, curl examples</li>
+        <li><a href="https://github.com/acebcom/aceb.com/blob/main/docs/agent-api.md" rel="noopener" target="_blank">Agent REST API</a> — the same flow over plain HTTP</li>
+        <li><a href="https://api.aceb.com/agent/openapi.json" rel="noopener" target="_blank">OpenAPI spec</a> and <a href="https://aceb.com/llms.txt" rel="noopener" target="_blank">llms.txt</a></li>
+        <li><a href="https://github.com/acebcom/aceb.com/tree/main/examples" rel="noopener" target="_blank">Example client</a> in Node.js</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section-alt">
+    <div class="section-inner">
+      <div class="cta-banner">
+        <h2>Prefer to shop yourself?</h2>
+        <p>Browse thousands of gift cards and pay with Bitcoin, Ethereum, Solana, USDC and more.</p>
+        <a class="btn-primary" href="https://aceb.com/giftcards" rel="noopener" target="_blank">Browse Gift Cards →</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">ACEB<span>.</span>com</div>
+      <p>Online shop for digital gift cards paid with cryptocurrency.</p>
+      <p class="footer-links">
+        <a href="https://aceb.com" rel="noopener" target="_blank">aceb.com</a> &nbsp;·&nbsp;
+        <a href="../">Overview</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/faq" rel="noopener" target="_blank">FAQ</a> &nbsp;·&nbsp;
+        <a href="https://aceb.com/contact" rel="noopener" target="_blank">Contact</a> &nbsp;·&nbsp;
+        <a href="mailto:support@aceb.com">support@aceb.com</a>
+      </p>
+      <p class="footer-legal">© LOYALTY VAULT SRL — All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
